@@ -1,0 +1,15 @@
+# Number of links query
+# 
+# This query is used to count the numer of links between the From and To datasets within a LocI Linkset.
+#
+# In words this query asks:
+#
+# How many triples are there in the graph <G> that have a loci:hadGenerationMethod property?
+
+PREFIX m: <http://linked.data.gov.au/def/loci/hadGenerationMethod>
+SELECT (COUNT(?s) AS ?count)
+WHERE {
+    GRAPH <G> {
+	?s m: ?m .
+    }
+}

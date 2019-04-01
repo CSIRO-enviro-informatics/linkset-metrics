@@ -5,6 +5,10 @@ This repository contains a description of, and code for, the calculation of Link
 ### Linkset
 A Linkset is a specialised type of [RDF](https://www.w3.org/2001/sw/wiki/RDF) Dataset that contains links between other datasets. Linksets are created to be managed separately from either of the Datasets that they join as this allows for more powerful governance. By publishing Linksets for dataset links, the LocI project ensures...
 
+The LocI project's formal definition of a Linkset is within the [LocI Ontology](http://linked.data.gov.au/def/loci): 
+
+* LocI Ontology Linkset definition: <http://linked.data.gov.au/def/loci#Linkset>
+
 ### Metrics
 The metrics that are calculated for each LocI Linkset are published on the Linkset's README page, for example, the metrics for the Linkset **[Current Addresses to 2011 Mesh Block Linkset](https://github.com/CSIRO-enviro-informatics/addrmb11-linkset)** are visible on that Linkset's home page.
 
