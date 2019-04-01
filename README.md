@@ -3,9 +3,9 @@
 This repository contains a description of, and code for, the calculation of Linkset metrics for the [LocI project](http://locationindex.org/).
 
 ### Linkset
-A Linkset is a specialised type of [RDF](https://www.w3.org/2001/sw/wiki/RDF) Dataset that contains links between other datasets. Linksets are created to be managed separately from either of the Datasets that they join as this allows for more powerful governance. By publishing Linksets for dataset links, the LocI project ensures...
+A Linkset is a specialised type of [RDF](https://www.w3.org/2001/sw/wiki/RDF) Dataset that contains links between other datasets. Linksets are created to allow for the management of links between Datasets separately to the Datasets themselves. This is because links between Datasets may not be solely the province of either of the linked Dataset's owners and thus cannot easily just be published within either or both Datasets.
 
-The LocI project's formal definition of a Linkset is within the [LocI Ontology](http://linked.data.gov.au/def/loci): 
+The LocI project's formal definition of a Linkset is within the [LocI Ontology](http://linked.data.gov.au/def/loci):
 
 * LocI Ontology Linkset definition: <http://linked.data.gov.au/def/loci#Linkset>
 
@@ -25,14 +25,14 @@ As an example of results, the metrics for the Linkset **[Current Addresses to 20
 **Metric** | **Value**
 -- | --
 Number of links | 14173051
-Number of items in Dataset A (from) not linked | *not yet calculated* 
+Number of items in Dataset A (from) not linked | *not yet calculated*
 Number of items in Dataset B (to) not linked | *not yet calculated*
 Number of link creation methods used | 5
 Numbers of uses of each link-creation method | m1: 13361555<br />m2: 188410<br />m3: 114823<br />m4: 459270<br />m5: 48993
 
 
 ## Linkset code
-The code used to generate a Linkset's metrics are a series of [SPARQL queries](https://www.w3.org/TR/sparql11-overview/) that are stored in the [queries/](queries/) folder of this repository. 
+The code used to generate a Linkset's metrics are a series of [SPARQL queries](https://www.w3.org/TR/sparql11-overview/) that are stored in the [queries/](queries/) folder of this repository.
 
 One example query is that used to generate the *Number of links* metric which is:
 
@@ -60,4 +60,3 @@ The content of this API is licensed for use under the [Creative Commons 4.0 Lice
 **Nicholas Car**  
 CSIRO Land & Water, Environmental Informatics Group  
 <nicholas.car@csiro.au>  
-
